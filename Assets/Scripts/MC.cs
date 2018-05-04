@@ -6,6 +6,7 @@ public class MC : MonoBehaviour {
 
     public Animator anim;
     public float health;
+    [SerializeField] HealthManager hManager;
     Quaternion targetRot;
 
 
@@ -17,7 +18,8 @@ public class MC : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//Handles Movement
+        hManager.loseHealth();
+        //Handles Movement
         if (Input.GetKey(KeyCode.W))
         {
             anim.SetBool("isWalking", true);
@@ -47,10 +49,12 @@ public class MC : MonoBehaviour {
 
         //Handles Attacking
         //Left Mouse - Melee
-        if(Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))
         {
             anim.SetBool("leftClick", true);
         }
+        else
+            anim.SetBool("leftClick", false);
 
 		if(GetComponent<Rigidbody>().transform.position.y >= 10.0f)
 		{
@@ -60,7 +64,7 @@ public class MC : MonoBehaviour {
     }
 
 
-    public void takeDamage(float d)
+    public void takeDamage(float d)  //take Damage
     {
         health -= d;
     }
