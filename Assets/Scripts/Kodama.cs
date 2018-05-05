@@ -23,7 +23,11 @@ public class Kodama : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         setDestination();
-        
+
+        if(Vector3.Distance(this.transform.position, destination.transform.position) <= 2)
+        {
+            MCScript.takeDamage(1f);
+        }
     }
 
 
@@ -37,11 +41,4 @@ public class Kodama : MonoBehaviour {
             anim.SetBool("walking", false);
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "MC")
-        {
-            MCScript.takeDamage(5f);
-        }
-    }
 }
