@@ -16,6 +16,10 @@ public class LevelManager : MonoBehaviour {
 		
 	}
 
+    public void exit()
+    {
+        Application.Quit();
+    }
 
     public void load(string level)
     {
