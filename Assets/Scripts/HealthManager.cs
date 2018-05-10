@@ -22,7 +22,7 @@ public class HealthManager : MonoBehaviour {
         if(main.health>50)
         {
             healthStraight.enabled = true;
-            float h = (main.health - 50)/ 50;
+            float h = (main.health - 50)/ 50f;
             healthStraight.fillAmount = h;
             healthStraight.color = Color.Lerp(Color.yellow, Color.green, h);
             healthArc.fillAmount = 1;
@@ -37,7 +37,7 @@ public class HealthManager : MonoBehaviour {
         else
         {
             healthStraight.enabled = false;
-            float h = main.health / 55;
+            float h = main.health / 55f;
             healthArc.fillAmount = h;
             healthArc.color = Color.Lerp(Color.red, Color.yellow, h); 
         }

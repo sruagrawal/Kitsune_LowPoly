@@ -15,6 +15,7 @@ ModelImporter:
     100014: rdmobj00
     100016: rdmobj00_001
     100018: //RootNode
+    100020: Cube_006
     400000: Cube
     400002: Cube_001
     400004: Cube_002
@@ -25,6 +26,7 @@ ModelImporter:
     400014: rdmobj00
     400016: rdmobj00_001
     400018: //RootNode
+    400020: Cube_006
     2100000: unnamed
     2100002: RokonEyeDh__fox_skn_png_001
     2100004: RokonDh__fox_skn_png
@@ -39,6 +41,7 @@ ModelImporter:
     2300012: Plane
     2300014: rdmobj00
     2300016: rdmobj00_001
+    2300018: Cube_006
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -48,6 +51,7 @@ ModelImporter:
     3300012: Plane
     3300014: rdmobj00
     3300016: rdmobj00_001
+    3300018: Cube_006
     4300000: Cube_004
     4300002: Cube_005
     4300004: Cube_003
@@ -57,6 +61,7 @@ ModelImporter:
     4300012: rdmobj00
     4300014: Cube
     4300016: Plane
+    4300018: Cube_006
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}

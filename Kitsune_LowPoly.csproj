@@ -292,10 +292,14 @@
     <Compile Include="Assets\Fantasy Skybox\Demo\Scripts\GE_FantasySkybox_UIs.cs" />
     <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
     <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
+    <Compile Include="Assets\Scripts\endofGameWin.cs" />
+    <Compile Include="Assets\Scripts\fireExplosion.cs" />
+    <Compile Include="Assets\Scripts\fireShooting.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Scripts\Kodama.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\MC.cs" />
+    <Compile Include="Assets\Scripts\PossessedKitsune.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fantasy Skybox\Readme.txt" />
